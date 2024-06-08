@@ -21,3 +21,17 @@ Built wasm file will be in `target/wasm32-unknown-unknown/release/`.
 ```bash
 make test
 ```
+
+## Add to assembllm
+
+Sample configuration update to `~/.assembllm/config.yaml`:
+
+```yaml
+  - name: openaigo
+    source: https://github.com/bradyjoslin/assembllm-openai-go/releases/latest/download/assembllm-openai-go.wasm
+    hash: 
+    apiKey: OPENAI_API_KEY
+    url: api.openai.com
+    model: gpt-4o
+    wasi: true
+```
